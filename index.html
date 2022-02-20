@@ -4,25 +4,39 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 <header class="header">
-  <div class="header__logo">
-    <img src="" alt="" class="logo">
-  </div>
-  <nav class="header-nav">
-    <button class="header-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
-    <div class="header-nav__wrapper header-nav__nojs">
-      <ul class="header-nav__list">
-        <li class="header-nav__item"><a href="">Guitars</a></li>
-        <li class="header-nav__item"><a href="">Accessories</a></li>
-        <li class="header-nav__item"><a href="">Storage</a></li>
-        <li class="header-nav__item"><a href="">Lessons</a></li>
-        <li class="header-nav__item"><a href="">Repairs</a></li>
-      </ul>
+  <div class="header__top-wrapper">
+    <div class="header__logo">
+      <img src="/img/header/Central%20Music%20Logo.svg" width="154" alt="Central Music" class="logo">
     </div>
-  </nav>
-  <div class="header__heading">
+    <nav class="header-nav">
+      <button class="header-nav__toggle">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="24" height="2.4" fill="white"/>
+        <rect y="10.8" width="24" height="2.4" fill="white"/>
+        <rect y="21.6" width="24" height="2.4" fill="white"/>
+      </svg>
+        <span class="visually-hidden">Открыть меню</span></button>
+      <div class="header-nav__wrapper header-nav__nojs visually-hidden ">
+        <ul class="header-nav__list">
+          <li><svg class ="header-nav__line" width="58" height="3" viewBox="0 0 58 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.5" x2="58" y2="1.5" stroke="#AB0433" stroke-width="3"/>
+          </svg></li>
+          <li><h4 class="header-nav__dropdown-heading">Guitars</h4></li>
+          <li class="header-nav__item"><a href="">Guitars</a></li>
+          <li class="header-nav__item"><a href="">Accessories</a></li>
+          <li class="header-nav__item"><a href="">Storage</a></li>
+          <li class="header-nav__item"><a href="">Lessons</a></li>
+          <li class="header-nav__item"><a href="">Repairs</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+    <div class="header__heading">
     <h1 class="heading">Fullfilling <br>dreams with <br>strings attached</h1>
   </div>
   <div class="header__sample">
