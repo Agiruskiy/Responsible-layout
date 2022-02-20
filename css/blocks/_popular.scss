@@ -1,0 +1,16 @@
+.popular {
+  background-color: $popular-background;
+  margin-top: 40px;
+}
+
+.popular-item__img-container {
+  height: 252px;
+  background: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.popular-item__img {
+  position: relative;
+  left: 6px;
+  bottom: 20px;
+}

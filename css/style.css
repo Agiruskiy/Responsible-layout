@@ -19,6 +19,7 @@
 @media (min-resolution: 2dppx) {
   .header {
     background: url("../img/header/Bg-header-mobile@2x.jpg");
+    background-size: cover;
   }
 }
 
@@ -148,7 +149,7 @@
   display: flex;
   flex-flow: column;
   margin-top: 106px;
-  padding: 33px 24px;
+  padding: 33px 0;
 }
 
 .card__line {
@@ -166,42 +167,34 @@
 }
 
 .card__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   display: grid;
 }
 
-.card__item {
+.card__item-wrapper {
   margin: 34px 0 0 0;
 }
 
-.new-item {
+.card__item {
   height: 391px;
   width: 328px;
+  margin-bottom: 0;
   box-shadow: 0 2px 4px rgba(28, 5, 77, 0.1), 0 12px 32px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 }
 
-.new-item__img-container {
-  height: 252px;
-  background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%);
-  border-radius: 10px 10px 0 0;
-}
-
-.new-item__img {
-  position: relative;
-  left: 6px;
-  bottom: 20px;
-}
-
-.new-item__description-container {
+.card__description-container {
   display: grid;
   grid-template-areas: "Brand Price" "Desc Desc" "Avail Avail";
   padding: 16px 24px 24px 24px;
+  border-radius: 0 0 10px 10px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(28, 5, 77, 0.1), 0 12px 32px rgba(0, 0, 0, 0.05);
 }
 
-.new-item__brand, .new-item__price {
+.card__brand, .card__price {
   grid-area: Brand;
   margin: 0;
   font-family: "Work Sans", sans-serif;
@@ -212,12 +205,12 @@
   color: #252525;
 }
 
-.new-item__price {
+.card__price {
   grid-area: Price;
   text-align: right;
 }
 
-.new-item__description-text {
+.card__description-text {
   margin: 6px 0 29px 0;
   grid-area: Desc;
   font-family: "Work Sans", sans-serif;
@@ -227,7 +220,7 @@
   color: #767676;
 }
 
-.availability {
+.card__availability {
   border: 1px solid #EAEAEA;
   border-radius: 20px;
   width: max-content;
@@ -238,9 +231,38 @@
   line-height: 150%;
   color: #505050;
 }
-.availability em {
+.card__availability em {
   font: inherit;
   font-weight: bold;
+}
+
+.new-item__img-container {
+  max-height: 252px;
+  background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%);
+  border-radius: 10px 10px 0 0;
+}
+
+.new-item__img {
+  position: relative;
+  left: 6px;
+  bottom: 20px;
+}
+
+.popular {
+  background-color: #ECECEC;
+  margin-top: 40px;
+}
+
+.popular-item__img-container {
+  height: 252px;
+  background: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.popular-item__img {
+  position: relative;
+  left: 6px;
+  bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

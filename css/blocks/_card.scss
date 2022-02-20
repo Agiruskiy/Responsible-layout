@@ -1,0 +1,99 @@
+.card {
+  display: flex;
+  flex-flow: column;
+  margin-top: 106px;
+  padding: 33px 0;
+}
+
+.card__line {
+  align-self: center;
+}
+
+.card__heading {
+  margin: 4px 0 0 0;
+  text-align: center;
+  font-family: $font-headings;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+
+  color: $card-headings;
+}
+
+.card__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+
+.card__item-wrapper {
+  margin: 34px 0 0 0;
+}
+
+.card__item {
+  height: 391px;
+  width: 328px;
+  margin-bottom: 0;
+  box-shadow: 0 2px 4px rgba(28, 5, 77, 0.1), 0 12px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.card__description-container{
+  display: grid;
+  grid-template-areas:
+          "Brand Price"
+          "Desc Desc"
+          "Avail Avail";
+  padding: 16px 24px 24px 24px;
+  border-radius: 0 0 10px 10px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(28, 5, 77, 0.1), 0 12px 32px rgba(0, 0, 0, 0.05);
+}
+
+
+.card__brand{
+  grid-area: Brand;
+  margin: 0;
+  font-family: $font-headings;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: $card-main;
+}
+
+.card__price{
+  @extend .card__brand;
+  grid-area: Price;
+  text-align: right;
+}
+
+.card__description-text {
+  margin: 6px 0 29px 0;
+  grid-area: Desc;
+  font-family: $font-headings;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+
+  color: $card-description;
+
+}
+
+.card__availability {
+  border: 1px solid #EAEAEA;
+  border-radius: 20px;
+  width: max-content;
+  padding: 0 5px;
+
+  grid-area: Avail;
+  font-family: $font-body;
+  font-size: 12px;
+  line-height: 150%;
+  color: $card-headings ;
+  em {
+    font: inherit;
+    font-weight: bold;
+  }
+}
