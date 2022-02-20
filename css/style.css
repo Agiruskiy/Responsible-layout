@@ -12,13 +12,13 @@
 .header {
   display: grid;
   grid-template-rows: min-content min-content 1fr;
-  background: url("/../../img/header/Bg-header-mobile.jpg");
+  background: url("../../img/header/Bg-header-mobile.jpg");
   background-size: cover;
   padding: 0 24px;
 }
 @media (min-resolution: 2dppx) {
   .header {
-    background: url("/../../img/header/Bg-header-mobile@2x.jpg");
+    background: url("../../img/header/Bg-header-mobile@2x.jpg");
   }
 }
 
@@ -104,13 +104,13 @@
   display: flex;
   flex-flow: column;
   text-align: center;
-  background: no-repeat url("/../../img/header/Ad-Mobile.jpg");
+  background: no-repeat url("../../img/header/Ad-Mobile.jpg");
   background-size: cover;
   border-radius: 13px;
 }
 @media (min-resolution: 2dppx) {
   .sample {
-    background: url("/../../img/header/Ad-Mobile@2x.jpg");
+    background: url("../../img/header/Ad-Mobile@2x.jpg");
   }
 }
 
