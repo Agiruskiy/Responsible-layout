@@ -1,0 +1,50 @@
+.sample {
+  padding: 18px 51px;
+  margin: 25px auto 0 auto;
+  max-width: 226px;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+
+  background: no-repeat url("../img/header/Ad-Mobile.jpg");
+  background-size: cover;
+  border-radius: 13px;
+
+  @media(min-resolution: 2dppx) {
+    background: url('../img/header/Ad-Mobile@2x.jpg');
+  }
+}
+
+.sample__heading {
+  margin: 0;
+  font-family: $font-headings;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 121%;
+
+  color: $header;
+}
+
+.sample__text {
+  margin: 4px 0 16px 0;
+  font-family: $font-headings;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 149%;
+
+  color: $header;
+}
+
+.button{
+  background: #FF753A;
+  border-radius: 16px;
+  border: none;
+  color: $header;
+  padding: 8px 12px;
+
+  font-family: $font-headings;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+}
+

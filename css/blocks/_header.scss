@@ -1,6 +1,4 @@
-.visually-hidden{
-  display:none!important;
-}
+
 
 .header{
   display: grid;
@@ -19,59 +17,6 @@
   justify-content: space-between;
   margin-top: 58px;
   height: 40px;
-}
-
-.header-nav__toggle {
-  background: none;
-  border: none;
-}
-
-.header-nav__wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 24px;
-
-  position: absolute;
-  right: 24px;
-
-  background-color: $header;
-  box-shadow: 0 2px 12px rgba(0,0,0, 0.2);
-  border-radius: 8px;
-
-}
-
-.header-nav__dropdown-heading {
-  font-family: $font-headings;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 130%;
-  color: $card-headings;
-  margin: 8px 0;
-  padding: 0;
-}
-
-
-.header-nav__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  :last-child{
-    margin-bottom: 0;
-  }
-}
-
-.header-nav__item {
-  padding: 0;
-  margin-bottom: 8px;
-  a {
-    font-family: $font-body;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    color: $card-headings;
-    text-decoration: none;
-  }
 }
 
 .header__heading {
@@ -94,53 +39,3 @@
   top: 85px;
 
 }
-.sample {
-  padding: 18px 51px;
-  margin: 25px auto 0 auto;
-  max-width: 226px;
-  display: flex;
-  flex-flow: column;
-  text-align: center;
-
-  background: no-repeat url("../img/header/Ad-Mobile.jpg");
-  background-size: cover;
-  border-radius: 13px;
-
-  @media(min-resolution: 2dppx) {
-    background: url('../img/header/Ad-Mobile@2x.jpg');
-  }
-}
-
-.sample__heading {
-  margin: 0;
-  font-family: $font-headings;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 121%;
-
-  color: $header;
-}
-
-.sample__text {
-  margin: 4px 0 16px 0;
-  font-family: $font-headings;
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 149%;
-
-  color: $header;
-}
-
-.button{
-  background: #FF753A;
-  border-radius: 16px;
-  border: none;
-  color: $header;
-  padding: 8px 12px;
-
-  font-family: $font-headings;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 130%;
-}
-
