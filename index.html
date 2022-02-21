@@ -163,59 +163,78 @@
     </div>
   </section>
   <section class="articles">
-    <h2 class="articles__heading">New Products</h2>
+    <svg class="card__line" width="80" height="3" viewBox="0 0 80 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line y1="1.5" x2="80" y2="1.5" stroke="#AB0433" stroke-width="3"/>
+    </svg>
+    <h2 class="card__heading">New Products</h2>
     <ul class="articles__list">
       <li class="articles__item">
         <article class="article">
           <div class="article__img-container">
-            <a href="" class="article__link"></a>
+            <img src="img/articles/Article%201-mobile.jpg" srcset="img/articles/Article%201-mobile@2x.jpg 2x" alt="article" class="article__img">
           </div>
-          <a href="" class="article__link"><h3 class="article__title">Article Title</h3></a>
-          <h4 class="article__subhead">Article Subhead</h4>
+          <div class="article__description-container">
+            <h3 class="article__title">Article Title</h3>
+            <h4 class="article__subhead">Article Subhead</h4>
+          </div>
         </article>
       </li>
       <li class="articles__item">
         <article class="article">
           <div class="article__img-container">
-            <a href="" class="article__link"></a>
+            <img src="img/articles/Article%202-mobile.jpg" srcset="img/articles/Article%202-mobile@2x.jpg 2x" alt="article" class="article__img">
           </div>
-          <a href="" class="article__link"><h3 class="article__title">Article Title</h3></a>
-          <h4 class="article__subhead">Article Subhead</h4>
+          <div class="article__description-container--alt">
+            <h3 class="article__title--alt">Article Title</h3>
+            <h4 class="article__subhead--alt">Article Subhead</h4>
+          </div>
         </article>
       </li>
       <li class="articles__item">
         <article class="article">
           <div class="article__img-container">
-            <a href="" class="article__link"></a>
+            <img src="img/articles/Article%203-mobile.jpg" srcset="img/articles/Article%203-mobile@2x.jpg 2x" alt="article" class="article__img">
           </div>
-          <a href="" class="article__link"><h3 class="article__title">Article Title</h3></a>
-          <h4 class="article__subhead">Article Subhead</h4>
+          <div class="article__description-container">
+            <h3 class="article__title">Article Title</h3>
+            <h4 class="article__subhead">Article Subhead</h4>
+          </div>
         </article>
       </li>
       <li class="articles__item">
         <article class="article">
           <div class="article__img-container">
-            <a href="" class="article__link"></a>
+            <img src="img/articles/Article%204-mobile.jpg" srcset="img/articles/Article%204-mobile@2x.jpg 2x" alt="article" class="article__img">
           </div>
-          <a href="" class="article__link"><h3 class="article__title">Article Title</h3></a>
-          <h4 class="article__subhead">Article Subhead</h4>
+          <div class="article__description-container--alt">
+            <h3 class="article__title--alt">Article Title</h3>
+            <h4 class="article__subhead--alt">Article Subhead</h4>
+          </div>
         </article>
       </li>
     </ul>
   </section>
 </main>
 <footer class="footer">
-  <div class="footer__interactive">
     <section class="footer__user-menu">
-      <h5 class="user-menu__header">My Account</h5>
       <ul class="user-menu__list">
-        <li class="user-menu__item"><a href="" class="user-menu__link">Overview</a></li>
-        <li class="user-menu__item"><a href="" class="user-menu__link"></a>Order History</li>
-        <li class="user-menu__item"><a href="" class="user-menu__link"></a>Wishlist</li>
-        <li class="user-menu__item"><a href="" class="user-menu__link"></a>Account information</li>
+        <li><svg  width="58" height="3" viewBox="0 0 58 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line class ="user-menu__line" y1="1.5" x2="58" y2="1.5" stroke="#AB0433" stroke-width="3"/>
+        </svg></li>
+        <li><h5 class="user-menu__header">My Account</h5></li>
+        <li class="user-menu__item">Overview</li>
+        <li class="user-menu__item">Order History</li>
+        <li class="user-menu__item">Wishlist</li>
+        <li class="user-menu__item">Account information</li>
       </ul>
+        <div class="footer__socials">
+          <img src="img/social/Youtube.svg" alt="" class="social">
+          <img src="img/social/Twitter.svg" alt="" class="social">
+          <img src="img/social/Instagram.svg" alt="" class="social">
+          <img src="img/social/Facebook.svg" alt="" class="social">
+        </div>
+
     </section>
-  </div>
   <div class="footer-credentials">
     <p class="credentials">©2021 Music Store</p>
   </div>
