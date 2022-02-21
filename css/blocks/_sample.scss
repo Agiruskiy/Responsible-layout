@@ -1,18 +1,24 @@
 .sample {
   padding: 18px 51px;
-  margin: 25px auto 0 auto;
-  max-width: 226px;
   display: flex;
   flex-flow: column;
   text-align: center;
 
   background: no-repeat url("../img/header/Ad-Mobile.jpg");
   background-size: cover;
-  border-radius: 13px;
+  border-radius: 10px;
 
   @media(min-resolution: 2dppx) {
     background: url('../img/header/Ad-Mobile@2x.jpg');
   }
+  @media(min-width: $tablet) {
+    padding: 49.5px 139px;
+
+    background: no-repeat url("../img/header/Ad-Tablet.jpg");
+    background-size: cover;
+  }
+
+
 }
 
 .sample__heading {
@@ -23,6 +29,10 @@
   line-height: 121%;
 
   color: $header;
+  @media(min-width: $tablet) {
+    font-size: 46px;
+    line-height: 120%;
+  }
 }
 
 .sample__text {
@@ -33,6 +43,10 @@
   line-height: 149%;
 
   color: $header;
+  @media(min-width: $tablet) {
+    font-size: 24px;
+    line-height: 149%;
+  }
 }
 
 .button{
@@ -46,5 +60,8 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 130%;
+  @media(min-width: $tablet) {
+
+  }
 }
 
