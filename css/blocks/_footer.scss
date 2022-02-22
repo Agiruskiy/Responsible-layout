@@ -6,6 +6,13 @@
 
 .footer__user-menu {
   padding-top: 25px;
+
+  @media(min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 141px 118px 1fr;
+    grid-column-gap: 48px;
+    padding: 69px 64px 52px 64px;
+  }
 }
 
 .user-menu__list {
@@ -17,6 +24,20 @@
   padding: 0;
   row-gap: 9px;
 
+  @media(min-width: $tablet) {
+    align-items: start;
+
+  }
+
+}
+
+.user-store__list {
+  @extend .user-menu__list;
+  @extend .visually-hidden;
+  @media(min-width: $tablet) {
+    position: static;
+    transform: none;
+  }
 }
 
 .user-menu__line {
@@ -40,16 +61,41 @@
   line-height: 130%;
 }
 
+.footer__logo-social {
+  @media(min-width: $tablet) {
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    justify-items: end;
+    align-items: end;
+  }
+}
+
+.footer__logo {
+  @extend .visually-hidden;
+  @media(min-width: $tablet) {
+    position: static;
+    transform: none;
+    margin-bottom: 27px;
+  }
+}
+
 .footer__socials {
   display: flex;
   margin: 32px 0;
   justify-content: center;
   column-gap: 12px;
+  @media(min-width: $tablet) {
+    margin: 0;
+    height: 20px;
+  }
 }
 
 .footer-credentials {
   background-color: $footer-credits-background;
   padding: 8px 0;
+  @media(min-width: $tablet) {
+  padding-left: 64px;
+  }
 }
 
 .credentials {
@@ -60,4 +106,7 @@
   line-height: 140%;
 
   text-align: center;
+  @media(min-width: $tablet) {
+    text-align: start;
+  }
 }

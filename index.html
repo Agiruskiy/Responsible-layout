@@ -21,7 +21,7 @@
         <rect y="21.6" width="24" height="2.4" fill="white"/>
       </svg>
         <span class="visually-hidden">Открыть меню</span></button>
-      <div class="header-nav__wrapper header-nav__nojs visually-hidden ">
+      <div class="header-nav__wrapper header-nav__nojs visually-hidden">
         <ul class="header-nav__list">
           <li><svg class ="header-nav__line" width="58" height="3" viewBox="0 0 58 3" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line y1="1.5" x2="58" y2="1.5" stroke="#AB0433" stroke-width="3"/>
@@ -51,10 +51,11 @@
 </header>
 <main class="main">
   <section class="card">
-    <svg class="card__line" width="80" height="3" viewBox="0 0 80 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <line y1="1.5" x2="80" y2="1.5" stroke="#AB0433" stroke-width="3"/>
-    </svg>
-    <h2 class="card__heading">New Products</h2>
+    <picture class="card__line">
+      <source media="(min-width: 760px) and (max-width: 1225px)" srcset="img/line-long.svg">
+      <img src="img/line.svg" alt="" >
+    </picture>
+    <h2 class="card__heading new__heading">New Products</h2>
     <ul class="card__list">
       <li class="card__item-wrapper">
         <article class="card__item">
@@ -109,10 +110,10 @@
       <svg class="card__line" width="80" height="3" viewBox="0 0 80 3" fill="none" xmlns="http://www.w3.org/2000/svg">
         <line y1="1.5" x2="80" y2="1.5" stroke="#AB0433" stroke-width="3"/>
       </svg>
-      <h2 class="card__heading">Popular Finds</h2>
-      <ul class="card__list">
+      <h2 class="card__heading popular__heading">Popular Finds</h2>
+      <ul class="card__list popular__list">
         <li class="card__item-wrapper">
-          <article class="card__item">
+          <article class="card__item popular__item">
             <div class="popular-item__img-container">
               <img src="img/cards/Product%201-mobile.png" srcset="img/cards/Product%201-mobile@2x.png 2x" alt="Product" class="new-item__img">
             </div>
@@ -124,7 +125,7 @@
           </article>
         </li>
         <li class="card__item-wrapper">
-          <article class="card__item">
+          <article class="card__item popular__item">
             <div class="popular-item__img-container">
               <img src="img/cards/Product%202-mobile.png" srcset="img/cards/Product%202-mobile@2x.png 2x" alt="Product" class="new-item__img">
             </div>
@@ -136,7 +137,7 @@
           </article>
         </li>
         <li class="card__item-wrapper">
-          <article class="card__item">
+          <article class="card__item popular__item">
             <div class="popular-item__img-container">
               <img src="img/cards/Product%203-mobile.png" srcset="img/cards/Product%203-mobile@2x.png 2x" alt="Product" class="new-item__img">
             </div>
@@ -148,7 +149,7 @@
           </article>
         </li>
         <li class="card__item-wrapper">
-          <article class="card__item">
+          <article class="card__item popular__item">
             <div class="popular-item__img-container">
               <img src="img/cards/Product%204-mobile.png" srcset="img/cards/Product%204-mobile@2x.png 2x" alt="Product" class="new-item__img">
             </div>
@@ -166,12 +167,16 @@
     <svg class="card__line" width="80" height="3" viewBox="0 0 80 3" fill="none" xmlns="http://www.w3.org/2000/svg">
       <line y1="1.5" x2="80" y2="1.5" stroke="#AB0433" stroke-width="3"/>
     </svg>
-    <h2 class="card__heading">New Products</h2>
+    <h2 class="card__heading articles__heading">Gear Heads</h2>
     <ul class="articles__list">
       <li class="articles__item">
         <article class="article">
           <div class="article__img-container">
-            <img src="img/articles/Article%201-mobile.jpg" srcset="img/articles/Article%201-mobile@2x.jpg 2x" alt="article" class="article__img">
+            <picture>
+              <source media="(min-width: 1225px)" srcset="img/articles/Article%201-desktop.jpg 1x, img/articles/Article%201-desktop@2x.jpg 2x">
+              <source media="(min-width: 760px)" srcset="img/articles/Article%201-tablet.jpg 1x, img/articles/Article%201-tablet@2x.jpg 2x">
+              <img src="img/articles/Article%201-mobile.jpg" srcset="img/articles/Article%201-mobile@2x.jpg 2x" alt="article" class="article__img">
+            </picture>
           </div>
           <div class="article__description-container">
             <h3 class="article__title">Article Title</h3>
@@ -182,7 +187,11 @@
       <li class="articles__item">
         <article class="article">
           <div class="article__img-container">
-            <img src="img/articles/Article%202-mobile.jpg" srcset="img/articles/Article%202-mobile@2x.jpg 2x" alt="article" class="article__img">
+            <picture>
+              <source media="(min-width: 1225px)" srcset="img/articles/Article%202-desktop.jpg 1x, img/articles/Article%202-desktop@2x.jpg 2x">
+              <source media="(min-width: 760px)" srcset="img/articles/Article%202-tablet.jpg 1x, img/articles/Article%202-tablet@2x.jpg 2x">
+              <img src="img/articles/Article%202-mobile.jpg" srcset="img/articles/Article%202-mobile@2x.jpg 2x" alt="article" class="article__img">
+            </picture>
           </div>
           <div class="article__description-container--alt">
             <h3 class="article__title--alt">Article Title</h3>
@@ -190,10 +199,25 @@
           </div>
         </article>
       </li>
-      <li class="articles__item">
+      <li class="articles__item article__desktop-only">
         <article class="article">
           <div class="article__img-container">
-            <img src="img/articles/Article%203-mobile.jpg" srcset="img/articles/Article%203-mobile@2x.jpg 2x" alt="article" class="article__img">
+            <img src="img/articles/Article%205-desktop.jpg" srcset="img/articles/Article%205-desktop@2x.jpg 2x" alt="article" class="article__img">
+          </div>
+          <div class="article__description-container--alt">
+            <h3 class="article__title--alt">Article Title</h3>
+            <h4 class="article__subhead--alt">Article Subhead</h4>
+          </div>
+        </article>
+      </li>
+      <li class="articles__item article__first-row">
+        <article class="article">
+          <div class="article__img-container">
+            <picture>
+              <source media="(min-width: 1225px)" srcset="img/articles/Article%203-desktop.jpg 1x, img/articles/Article%203-desktop@2x.jpg 2x">
+              <source media="(min-width: 760px)" srcset="img/articles/Article%203-tablet.jpg 1x, img/articles/Article%203-tablet@2x.jpg 2x">
+              <img src="img/articles/Article%203-mobile.jpg" srcset="img/articles/Article%203-mobile@2x.jpg 2x" alt="article" class="article__img">
+            </picture>
           </div>
           <div class="article__description-container">
             <h3 class="article__title">Article Title</h3>
@@ -201,10 +225,14 @@
           </div>
         </article>
       </li>
-      <li class="articles__item">
+      <li class="articles__item article__first-row">
         <article class="article">
           <div class="article__img-container">
-            <img src="img/articles/Article%204-mobile.jpg" srcset="img/articles/Article%204-mobile@2x.jpg 2x" alt="article" class="article__img">
+            <picture>
+              <source media="(min-width: 1225px)" srcset="img/articles/Article%204-desktop.jpg 1x, img/articles/Article%204-desktop@2x.jpg 2x">
+              <source media="(min-width: 760px)" srcset="img/articles/Article%204-tablet.jpg 1x, img/articles/Article%204-tablet@2x.jpg 2x">
+              <img src="img/articles/Article%204-mobile.jpg" srcset="img/articles/Article%204-mobile@2x.jpg 2x" alt="article" class="article__img">
+            </picture>
           </div>
           <div class="article__description-container--alt">
             <h3 class="article__title--alt">Article Title</h3>
@@ -227,12 +255,26 @@
         <li class="user-menu__item">Wishlist</li>
         <li class="user-menu__item">Account information</li>
       </ul>
+      <ul class="user-store__list">
+        <li><svg  width="58" height="3" viewBox="0 0 58 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line class ="user-menu__line" y1="1.5" x2="58" y2="1.5" stroke="#AB0433" stroke-width="3"/>
+        </svg></li>
+        <li><h5 class="user-menu__header">Store</h5></li>
+        <li class="user-menu__item">Security Notice</li>
+        <li class="user-menu__item">Location & Hours</li>
+        <li class="user-menu__item">Rentals</li>
+        <li class="user-menu__item">Privacy Notice</li>
+      </ul>
+
+      <section class="footer__logo-social">
+        <img src="img/header/Central%20Music%20Logo.svg" width="255.5" alt="Central Music" class="footer__logo">
         <div class="footer__socials">
           <img src="img/social/Youtube.svg" alt="" class="social">
           <img src="img/social/Twitter.svg" alt="" class="social">
           <img src="img/social/Instagram.svg" alt="" class="social">
           <img src="img/social/Facebook.svg" alt="" class="social">
         </div>
+      </section>
 
     </section>
   <div class="footer-credentials">

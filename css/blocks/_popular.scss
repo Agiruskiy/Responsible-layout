@@ -1,6 +1,28 @@
 .popular {
   background-color: $popular-background;
-  margin-top: 40px;
+  padding-top: 48px;
+  margin-top: 0;
+  @media(min-width: $tablet) {
+    padding-top: 88px;
+  }
+}
+
+.popular__heading {
+  @media(min-width: $tablet) {
+    margin-bottom: 42px;
+  }
+}
+
+.popular__list {
+  @media(min-width: $tablet) {
+    width: 850px;
+  }
+}
+
+.popular__item {
+  @media(min-width: $tablet) {
+    width: 409px;
+  }
 }
 
 .popular-item__img-container {
@@ -10,7 +32,8 @@
 }
 
 .popular-item__img {
+  display: block;
   position: relative;
-  left: 6px;
   bottom: 20px;
+  margin: 0 auto;
 }

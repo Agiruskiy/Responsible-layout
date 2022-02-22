@@ -1,7 +1,8 @@
 .page__body {
-  margin:0;
+  margin: 0;
 }
 
 .visually-hidden{
-  display:none!important;
+  position: fixed;
+  transform: scale(0);
 }

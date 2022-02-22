@@ -1,11 +1,17 @@
+.new__heading {
+  margin-top: 0;
+
+}
+
 .new-item__img-container {
-  max-height: 252px;
   background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%);
   border-radius: 10px 10px 0 0;
+  justify-items: center;
 }
 
 .new-item__img {
+  display: block;
   position: relative;
-  left: 6px;
   bottom: 20px;
+  margin: 0 auto;
 }
