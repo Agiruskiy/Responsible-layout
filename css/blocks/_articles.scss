@@ -34,15 +34,23 @@
       margin-right: 0;
     }
   }
+  @media(min-width: $desktop) {
+    width: 1264px;
+    column-gap: 32px;
+    }
 }
+
 
 .articles__item {
   margin-top: 24px;
-  order: 2;
+  order: 3;
   @media(min-width: $tablet) {
     margin-top: 0;
     margin-bottom: 48px;
     margin-right: 32px;
+  }
+  @media(min-width: $desktop) {
+    margin-right: 0;
   }
 }
 
@@ -94,9 +102,11 @@
 
 .article__first-row {
   order: 1;
+
 }
 
 .article__desktop-only {
+  order: 2;
   position: fixed;
   transform: scale(0);
   @media(min-width: $desktop) {

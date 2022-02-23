@@ -13,6 +13,9 @@
     grid-column-gap: 48px;
     padding: 69px 64px 52px 64px;
   }
+  @media(min-width: $desktop) {
+    padding: 69px 52px 52px 100px;
+  }
 }
 
 .user-menu__list {
@@ -94,7 +97,10 @@
   background-color: $footer-credits-background;
   padding: 8px 0;
   @media(min-width: $tablet) {
-  padding-left: 64px;
+    padding-left: 64px;
+  }
+  @media(min-width: $desktop) {
+    padding-left: 100px;
   }
 }
 

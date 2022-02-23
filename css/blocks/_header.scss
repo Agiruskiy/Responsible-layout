@@ -8,8 +8,6 @@
   padding: 58px 24px 0 24px;
   height: 449px;
 
-
-
   @media(min-resolution: 2dppx) {
     background: url('../img/header/Bg-header-mobile@2x.jpg');
     background-size: cover;
@@ -21,8 +19,23 @@
     height: 742px;
     padding: 71px 64px 0 64px;
 
+    @media(min-resolution: 2dppx) {
+      background: url('../img/header/Bg-header-tablet@2x.jpg');
+      background-size: cover;
+    }
   }
 
+  @media(min-width: $desktop) {
+    background: url('../img/header/Bg-header-desktop.jpg');
+    background-size: cover;
+    height: 742px;
+    padding: 71px 88px 0 88px;
+
+    @media(min-resolution: 2dppx) {
+      background: url('../img/header/Bg-header-desktop@2x.jpg');
+      background-size: cover;
+    }
+  }
 }
 .header__top-wrapper {
   display:flex;
@@ -32,22 +45,34 @@
 }
 
 .header__heading {
-  align-self: start;
+  margin: 0 auto;
+  @media(min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .heading {
-  margin: 0;
   font-family: $font-headings;
   font-weight: bold;
   font-size: 32px;
-  line-height:  120%;
+  line-height: 120%;
   text-align: center;
+  width: 311px;
 
   color: $header;
+
   @media(min-width: $tablet) {
     text-align: left;
     font-size: 56px;
     line-height: 120%;
+    width: 475px;
+  }
+
+  @media(min-width: $desktop){
+    width: 579px;
+    br {
+      display: none;
+    }
   }
 
 }

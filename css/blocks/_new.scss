@@ -1,6 +1,17 @@
 .new__heading {
   margin-top: 0;
+}
 
+.new__list {
+  padding-bottom: 6px;
+
+  @media(min-width: $tablet) {
+    padding-bottom: 46px;
+
+  }
+  @media(min-width: $desktop) {
+    padding-bottom: 54px;
+  }
 }
 
 .new-item__img-container {

@@ -1,5 +1,5 @@
 .sample {
-  padding: 18px 51px;
+  padding: 18px 76px; //76
   display: flex;
   flex-flow: column;
   text-align: center;
@@ -9,16 +9,33 @@
   border-radius: 10px;
 
   @media(min-resolution: 2dppx) {
-    background: url('../img/header/Ad-Mobile@2x.jpg');
-  }
-  @media(min-width: $tablet) {
-    padding: 49.5px 139px;
-
-    background: no-repeat url("../img/header/Ad-Tablet.jpg");
+    background: no-repeat url('../img/header/Ad-Mobile@2x.jpg');
     background-size: cover;
   }
 
+  @media(min-width: $tablet) {
+    padding: 49.5px 179px; //179
 
+    background: no-repeat url("../img/header/Ad-Tablet.jpg");
+    background-size: cover;
+
+    @media(min-resolution: 2dppx) {
+      background: no-repeat url('../img/header/Ad-Tablet@2x.jpg');
+      background-size: cover;
+    }
+  }
+
+  @media(min-width: $desktop) {
+    padding: 49.5px 360px; //36
+
+    background: no-repeat url("../img/header/Ad-Desktop.jpg");
+    background-size: cover;
+
+    @media(min-resolution: 2dppx) {
+      background: no-repeat url('../img/header/Ad-Desktop@2x.jpg');
+      background-size: cover;
+    }
+  }
 }
 
 .sample__heading {
@@ -41,11 +58,14 @@
   font-weight: 600;
   font-size: 10px;
   line-height: 149%;
+  width: 226px;
+  align-self: center;
 
   color: $header;
   @media(min-width: $tablet) {
     font-size: 24px;
     line-height: 149%;
+    width: 616px;
   }
 }
 
@@ -61,7 +81,10 @@
   font-size: 12px;
   line-height: 130%;
   @media(min-width: $tablet) {
+    padding: 8px 16px;
+    border-radius: 32px;
 
+    font-size: 14px;
   }
 }
 
